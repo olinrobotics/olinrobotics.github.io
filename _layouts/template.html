@@ -23,13 +23,15 @@
         </header>
 
         <section id="downloads" class="clearfix">
-          <a href="https://github.com/olinrobotics" id="view-on-github" class="button"><span>View on GitHub</span></a>
+          {% for page in site.pages %}
+          <a href={{ page.filename }} id="view-on-github" class="button"><span>{{ page.title }}</span></a>
+          {% endfor %}
         </section>
 
         <hr>
 
         <section id="main_content">
-          <p>CONTENT</p>
+          {{ content }}
         </section>
 
         <footer>
