@@ -1,7 +1,7 @@
 ---
 title: Info Dump
 layout: template
-filename: info_dump.md
+filename: info_dump
 --- 
 
 # Cross Project Info

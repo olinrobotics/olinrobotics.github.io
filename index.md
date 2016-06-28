@@ -1,16 +1,16 @@
 ---
 title: Olin Robotics
 layout: template
-filename: index.md
+filename: index
 --- 
 
 # Olin Robotics Main Projects Page
 
 ## Current Projects:
 
-- [Autonomous Multirotor Research](autonomous_multirotor_research)
-- [Autonomous Ground Vehicle Research](gator_ground_vehicle_research)
-- [Coworker Robot Research - Edwin](edwin_coworker_robot)
+- [Autonomous Multirotor Research](#autonomous_multirotor_research)
+- [Autonomous Ground Vehicle Research](#gator_ground_vehicle_research)
+- [Coworker Robot Research - Edwin](#edwin_coworker_robot)
 - [Cross Project Info Page](info_dump)
 
 ### Autonomous Multirotor Research
