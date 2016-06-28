@@ -1,3 +1,9 @@
+---
+title: Olin Robotics
+layout: template
+filename: index.md
+--- 
+
 # Olin Robotics Main Projects Page
 ## Current Projects:
 - [Autonomous Multirotor Research](autonomous_multirotor_research)

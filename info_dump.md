@@ -1,3 +1,9 @@
+---
+title: Info Dump
+layout: template
+filename: info_dump.md
+--- 
+
 # Cross Project Info
 This page is a collection of documentation for aspects of different robo lab projects which may be useful for multiple different projects.  It should contain short descriptions of the work you did with links to full documentation of what you did.
 
