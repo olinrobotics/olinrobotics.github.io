@@ -57,10 +57,10 @@ body {
 }
 
 a {
-  color: #000055;
+  color: #000077;
 }
 a:hover {
-  color: #000077;
+  color: #0000CC;
 }
 
 header {
@@ -105,7 +105,7 @@ header h2 {
 a.button {
   display: block;
   float: left;
-  width: 179px;
+  width: 120px;
   padding: 12px 8px 12px 8px;
   margin-right: 14px;
   font-size: 15px;
@@ -248,20 +248,20 @@ h2 {
   margin-bottom: 8px;
   font-size: 22px;
   font-weight: bold;
-  color: #303030;
+  color: #000044;
 }
 
 h3 {
   margin-bottom: 8px;
   font-size: 18px;
   font-weight: bold;
-  color: #d5000d;
+  color: #002244;
 }
 
 h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #303030;
+  color: #003344;
 }
 
 h5 {
