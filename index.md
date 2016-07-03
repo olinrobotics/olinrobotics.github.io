@@ -22,10 +22,10 @@ filename: index
   We are working on autonomous navagation of ground vehicles to assist air vehicles by extending the range of our autonomous systems.  These vehicles will autonomously carry an air vehicle to areas inaccesssible by humans, then launch the air vehicle to collect data, recover the air vehicle, and return.
   
 ### LavaBot
-  LavaBot is a dually faceted mission, incorporating a squadron of fully autonomous land and air vehicles. The aim of LavaBot is to climb a volcano and retreive samples from within it; to do so, we must be able to identify paths up the volcano from the air, relay those paths to the ground vehicles, launch and land multirotors on small platforms on the moving land vehicles, charge multirotors from the landing platform, and collect samples from within the volcano.
+  LavaBot is a dual-faceted mission: A squadron of fully autonomous land and air vehicles will be utilized to climb a volcano and retrieve samples from within it. To achieve these objectives, the air vehicles must be able to identify paths up the volcano and relay those paths to the ground vehicles. In addition, we must be able to autonomously land multirotors on small platforms mounted on the moving land vehicles, charge them from the landing platforms, and launch them again to collect samples from within the volcano.
   
 ### Edwin Coworker Robot
-  Edwin is a robotic arm which we are turning into a friendly robot which can intuitively interact with people.
+  Edwin is a robotic arm which we are turning into a friendly robot which can intuitively interact with people. Edwin communicates mainly through gesture and body posture- the universal language.
   
   
   
