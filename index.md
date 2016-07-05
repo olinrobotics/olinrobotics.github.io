@@ -16,7 +16,8 @@ filename: index
 
 ### Autonomous Multirotor Research
   The lab has a fleet of various multirotor aircraft equiped with Pixhawk flight controllers and GoPro cameras which we use for a multitude of different projects including data collection over volcanoes, autonomous landing on a vehicle, and photogrametry.
-  Project Pages: (coming soon)
+  
+  [Here is more about these projects](Multirotors)
 
 ### Gator Ground Vehicle Research
   We are working on autonomous navagation of ground vehicles to assist air vehicles by extending the range of our autonomous systems.  These vehicles will autonomously carry an air vehicle to areas inaccesssible by humans, then launch the air vehicle to collect data, recover the air vehicle, and return.
