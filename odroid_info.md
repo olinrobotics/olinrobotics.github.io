@@ -41,9 +41,31 @@ Now, connect an ethernet chord between your computer and the odroid, and select 
 #### SSH in
 Once you know the odroid's IP address, run `ssh <username>@<ipaddress>`
 
+By default, the username is **root** and the password is **odroid**.
+
 You should be prompted for the odroid's password, then you should get the command prompt of the odroid.
 
 Congratulations, you now have a terminal which is actually running commands on a different computer.
 
 ### Directly edit the SD card
 The odroid stores its entire file system on an SD card. This means that you can take that SD card out of the Odroid, plug it into your computer, and edit any files you want.  You use this method to set the resolution of the monitor in the boot.ini file before the first boot up.  It is also useful for getting files onto the Odroid, and can even be the primary method of interacting with the Odroid, especially if it is set up to run your code on startup.
+
+### Using GPIO Pins on the ODROID
+
+![pinout](images/odroid_pins.png)
+
+#### CLI
+
+```bash
+echo $(PIN) > /sys/class/gpio/export # PIN = whichever GPIO pin you decided to use
+echo $(MODE) > /sys/class/gpio/gpio$(PIN)/direction # MODE = 'in' or 'out'  
+echo $(VALUE) > /sys/class/gpio/gpio$(PIN)/value # VALUE = 1 for HIGH and 0 for LOW
+echo $(PIN) > /sys/class/gpio/unexport # Done with using PIN
+```
+
+####  C/C++
+Currently, ODROID only supports GPIO interfaces with C/C++.
+
+See [This Github Repo](https://github.com/yycho0108/GPIO_Interface) for Basic C++ interface with GPIO.
+
+For more sophisticated applications, see [This Github Repo](https://github.com/hardkernel/wiringPi).

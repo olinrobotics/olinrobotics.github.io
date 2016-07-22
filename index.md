@@ -12,6 +12,7 @@ filename: index
 - [Autonomous Ground Vehicle Research](#gator_ground_vehicle_research)
 - [LavaBot - Autonomous Volcanic Ground and Air Mission](#lavabot)
 - [Coworker Robot Research - Edwin](#edwin_coworker_robot)
+- [RFID-Enabled Fish Tagging](https://github.com/BluetoothFishTagging)
 - [Cross Project Info Page](info_dump)
 
 ### Autonomous Multirotor Research
@@ -28,5 +29,5 @@ filename: index
 ### Edwin Coworker Robot
   Edwin is a robotic arm which we are turning into a friendly robot which can intuitively interact with people. Edwin communicates mainly through gesture and body posture- the universal language.
   
-  
-  
+### RFID-Enabled Fish Tagging
+  In order to assist marine biologists in tracking highly migratory species of fish such as Tuna and Billfish, the IV Lab, in partnership with the Large Pelagics Lab, has been developing an alternative tagging platform denoted "HI-Tags," which encompass modern technology such as RFID, bluetooth, and mobile application to integrate a seamless tagging procedure within the fishing experience.
