@@ -57,10 +57,10 @@ The odroid stores its entire file system on an SD card. This means that you can 
 #### CLI
 
 ```bash
-echo $(PIN) > /sys/class/gpio/export # PIN = whichever GPIO pin you decided to use
-echo $(MODE) > /sys/class/gpio/gpio$(PIN)/direction # MODE = 'in' or 'out'  
-echo $(VALUE) > /sys/class/gpio/gpio$(PIN)/value # VALUE = 1 for HIGH and 0 for LOW
-echo $(PIN) > /sys/class/gpio/unexport # Done with using PIN
+echo ${PIN} > /sys/class/gpio/export # PIN = whichever GPIO pin you decided to use
+echo ${MODE} > /sys/class/gpio/gpio${PIN}/direction # MODE = 'in' or 'out'  
+echo ${VALUE} > /sys/class/gpio/gpio${PIN}/value # VALUE = 1 for HIGH and 0 for LOW
+echo ${PIN} > /sys/class/gpio/unexport # Done with using PIN
 ```
 
 ####  C/C++
