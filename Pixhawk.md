@@ -8,7 +8,7 @@
 >![Receiver](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Receiver.png)
 
 ####Paired Telemetry Antennae
->![Telem](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Telem.png)
+>![Telem](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Telem.jpg)
 
 ####PX4 Speaker
 >![Speaker](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Speaker.png)
