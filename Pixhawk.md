@@ -4,7 +4,7 @@
 ![Pixhawk](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Pixhawk.png)
 
 DSM X Spectrum Satellite Receiver	Paired Telemetry Antennae   PX4 Speaker
-![Receiver](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Receiver.png)
+>![Receiver](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Receiver.png)
 3DR’s BEC Power module- Connects to POWER on PX4	Motor Safety Switch
 
       
