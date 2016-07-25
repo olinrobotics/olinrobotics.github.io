@@ -5,13 +5,13 @@
 ![Pixhawk](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Pixhawk.png)
 
 ####DSM X Spectrum Satellite Receiver
->![Receiver](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Receiver.png)
+>![Receiver](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Receiver.jpg)
 
 ####Paired Telemetry Antennae
 >![Telem](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Telem.jpg)
 
 ####PX4 Speaker
->![Speaker](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Speaker.png)
+>![Speaker](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Speaker.jpg)
 
 3DR’s BEC Power module- Connects to POWER on PX4	Motor Safety Switch
 
