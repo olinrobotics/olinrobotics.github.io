@@ -23,13 +23,13 @@ filename: pixhawk_info
 Note: Connects to POWER on PX4
 > ![BEC](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/BEC.png)
 
-####Motor Safety Switch
->![Switch](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Switch.png)
+#### Motor Safety Switch
+> ![Switch](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Switch.png)
 
-####Mini SD Card in Pixhawk
->![SD](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/SD.png)
+#### Mini SD Card in Pixhawk
+ > ![SD](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/SD.png)
 
-####GPS module- Connects to CAN & GPS
->![GPS](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/GPS.png)
+#### GPS module- Connects to CAN & GPS
+> ![GPS](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/GPS.png)
  
 4 ESC Speed controllers- Consult http://ardupilot.org/copter/docs/connect-escs-and-motors.html for your specific type of quadcopter and plug the ESCs into Pixhawk MAIN OUT channels 1-4 in the correct order.
