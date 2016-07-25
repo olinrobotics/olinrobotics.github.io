@@ -1,6 +1,6 @@
 #Pixhawk PX4 Documentation
 ##PX4 Setup- Parts Breakdown
-###Pixhawk PX4 
+####Pixhawk PX4 
 ![Pixhawk](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Pixhawk.png)
 
 DSM X Spectrum Satellite Receiver	Paired Telemetry Antennae   PX4 Speaker
