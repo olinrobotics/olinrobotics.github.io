@@ -4,24 +4,24 @@ layout: template
 filename: pixhawk_info
 ---
 
-#Pixhawk PX4 Documentation
-##PX4 Setup- Parts Breakdown
+# Pixhawk PX4 Documentation
+## PX4 Setup- Parts Breakdown
 
-####Pixhawk PX4 
->![Pixhawk](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Pixhawk.png)
+#### Pixhawk PX4 
+> ![Pixhawk](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Pixhawk.png)
 
 ####DSM X Spectrum Satellite Receiver
->![Receiver](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Receiver.jpg)
+> ![Receiver](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Receiver.jpg)
 
-####Paired Telemetry Antennae
->![Telem](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Telem.jpg)
+#### Paired Telemetry Antennae
+> ![Telem](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Telem.jpg)
 
-####PX4 Speaker
->![Speaker](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Speaker.jpg)
+#### PX4 Speaker
+> ![Speaker](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Speaker.jpg)
 
-####3DR’s BEC Power module
+#### 3DR’s BEC Power module
 Note: Connects to POWER on PX4
->![BEC](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/BEC.png)
+> ![BEC](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/BEC.png)
 
 ####Motor Safety Switch
 >![Switch](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Switch.png)
