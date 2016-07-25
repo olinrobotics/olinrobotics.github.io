@@ -1,10 +1,18 @@
 #Pixhawk PX4 Documentation
 ##PX4 Setup- Parts Breakdown
+
 ####Pixhawk PX4 
 ![Pixhawk](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Pixhawk.png)
 
-DSM X Spectrum Satellite Receiver	Paired Telemetry Antennae   PX4 Speaker
+####DSM X Spectrum Satellite Receiver
 >![Receiver](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Receiver.png)
+
+####Paired Telemetry Antennae
+>![Telem](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Telem.png)
+
+####PX4 Speaker
+>![Speaker](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Speaker.png)
+
 3DR’s BEC Power module- Connects to POWER on PX4	Motor Safety Switch
 
       
