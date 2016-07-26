@@ -69,3 +69,52 @@ Currently, ODROID only supports GPIO interfaces with C/C++.
 See [This Github Repo](https://github.com/yycho0108/GPIO_Interface) for Basic C++ interface with GPIO.
 
 For more sophisticated applications, see [This Github Repo](https://github.com/hardkernel/wiringPi).
+
+### Setting Up WiFi on the ODROID with a USB Dongle
+
+```bash
+# FOLLOW THE STEPS SEQUENTIALLY EXCEPT [TIP]S
+# INSTALL THE TOOLS
+	sudo apt-get install wireless-tools wpasupplicant
+
+# [TIP] STATUS-CHECKING
+	dmesg | tail # CHECKS GENERAL DEVICE STATUS (AND OUTPUT THE END OF IT)
+	iwconfig # CHECKS WIRELESS DEVICE STATUS
+	ifconfig # CHECKS GENERAL NETWORK STATUS
+
+# SCAN FOR AVAILABLE NETWORKS (CHECK THAT DEVICE FUNCTIONS PROPERLY)
+	sudo iwlist wlan0 scan
+
+# CONFIGURE NETWORK INTERFACES
+	sudo -s #BECOME ROOT
+	echo -e "\nauto wlan0 \niface wlan0 inet dhcp \n\twpa-ssid OLIN-ROBOTICS\n\twpa-psk R0B0TS-RULE" >> /etc/network/interfaces
+
+# CONFIGURE WPA FOR YOUR NETWORK
+	wpa_passphrase  OLIN-ROBOTICS >> /etc/wpa_supplicant/wpa_supplicant_OLIN-ROBOTICS.conf 
+
+# START WPA_SUPPLICANT (TRY TO CONNECT TO NETWORK WITH GIVEN CONFIGURATION)
+	sudo wpa_supplicant -B -D wext -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant_OLIN-ROBOTICS.conf 
+	ip link show wlan0 | grep UP
+
+# ALTERNATIVELY, START WPA_SUPPLICANT WITH LOG
+	sudo wpa_supplicant -B -D wext -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant_OLIN-ROBOTICS.conf  -f /var/log/wpa_supplicant.log
+	cat /var/log/wpa_supplicant.log 
+
+# REBOOT ODROID
+	sudo reboot
+
+# RESTART wlan0 
+	sudo ifconfig wlan0 down && sudo ifconfig wlan0 up
+
+# [TIP] IF YOU MESSED UP AND HAVE MULTIPLE PROCESSES RUNNING WPA_SUPPLICANT, GET RID OF THEM
+	ps -ef | grep  "wpa_"
+	sudo kill $(pgrep -f "wpa_supplicant -B")
+
+# CHECK SUBNET CONNECTIVITY
+	ping 192.168.16.73
+
+# CHECK EXTERNAL NETWORK CONNECTIVITY (DISABLE NETWORK SHARING VIA ETHERNET CABLE IF YOU HAVE IT SET UP)
+	ping www.google.com
+
+# IF YOU'RE HERE, THEN YOU SHOULD BE ALL SET UP
+```
