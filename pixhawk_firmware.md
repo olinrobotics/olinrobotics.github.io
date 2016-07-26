@@ -4,9 +4,15 @@ layout: template
 filename: pixhawk_firmware
 ---
 
-# Pixhawk PX4 Documentation
+# Pixhawk Documentation
 
-## PX4 Setup- Installing Firmware
+## Pixhawk Setup- Installing Firmware
+
+#### Copter
+
+#### Plane
+
+#### Rover
 
 *This Git page is currently under construction.*
 
