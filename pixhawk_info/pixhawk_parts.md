@@ -10,7 +10,7 @@ filename: pixhawk_parts
 
 #### Pixhawk PX4 
 
-> ![Pixhawk](./images/Pixhawk.png)
+> ![Pixhawk](../images/Pixhawk.png)
 
 #### DSM X Spectrum Satellite Receiver
 
