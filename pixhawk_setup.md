@@ -57,14 +57,15 @@ This is a list of the absolute minimum number of parts you need installed to ope
 #### Quadcopter
 
 If in Stabilize Mode, you will require...
-> - Pixhawk
-> - Battery
-> - BEC voltage regulator
-> - The appropriate number of motors for your vehicle
-> - The same number of ESCs as motors (Quad, Hex, Octo, etc etc -Copters only)
-> - A motor controller, such as a [Sabertooth](https://www.dimensionengineering.com/datasheets/Sabertooth2x12.pdf) or a [Kangaroo](https://www.dimensionengineering.com/datasheets/KangarooManual.pdf) (Ground vehicles only)
-> - An RC receiver radio, preferably a [DSMX](../images/Receiver.jpg) or equivalent
-> - A safety switch
+
+ - Pixhawk
+ - Battery
+ - BEC voltage regulator
+ - The appropriate number of motors for your vehicle
+ - The same number of ESCs as motors (Quad, Hex, Octo, etc etc -Copters only)
+ - A motor controller, such as a [Sabertooth](https://www.dimensionengineering.com/datasheets/Sabertooth2x12.pdf) or a [Kangaroo](https://www.dimensionengineering.com/datasheets/KangarooManual.pdf) (Ground vehicles only)
+ - An RC receiver radio, preferably a [DSMX](../images/Receiver.jpg) or equivalent
+ - A safety switch
 
 
 
