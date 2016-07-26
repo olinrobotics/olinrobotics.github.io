@@ -6,6 +6,8 @@ filename: pixhawk_parts
 
 # Pixhawk PX4 Documentation
 
+###### *Last edited on 7/26/2016*
+
 ## PX4 Setup- Parts Breakdown
 
 #### Pixhawk PX4 
@@ -56,16 +58,18 @@ This is a list of the absolute minimum number of parts you need installed to ope
 
 #### Quadcopter
 
-If in Stabilize Mode, you will require...
+To fly in Stabilize Mode, you will need...
 
- - Pixhawk
- - Battery
- - BEC voltage regulator
+ - A Pixhawk with correct firmware and calibration uploaded
+ - A [battery](http://images6.wheelspinmodels.co.uk/EFLB0998-a47e.jpg), typically a 3 cell (11.1 volts, 5100 milliamp-hours)
+ - [BEC voltage regulator](../images/BEC.png)
  - The appropriate number of motors for your vehicle
- - The same number of ESCs as motors (Quad, Hex, Octo, etc etc -Copters only)
+ - The same number of [ESCs](../images/ESC.png) as motors (Quad, Hex, Octo, etc etc -Copters only)
  - A motor controller, such as a [Sabertooth](https://www.dimensionengineering.com/datasheets/Sabertooth2x12.pdf) or a [Kangaroo](https://www.dimensionengineering.com/datasheets/KangarooManual.pdf) (Ground vehicles only)
  - An RC receiver radio, preferably a [DSMX](../images/Receiver.jpg) or equivalent
  - A safety switch
+ - A RC transmitter that has been [bound](link) to the RC receiver
+ - 
 
 
 
