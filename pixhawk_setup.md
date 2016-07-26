@@ -48,4 +48,7 @@ Consult [Ardupilot](http://ardupilot.org/copter/docs/connect-escs-and-motors.htm
 
 > ![ESC](../images/ESC.png)
 
+
+## Minimum Requirements
+
 *This Git page is currently under construction.*
