@@ -8,6 +8,13 @@ filename: pixhawk_firmware
 
 ## Pixhawk Setup- Installing Firmware
 
+Select your vehicle below.
+
+- [Copter](#Copter)
+- [Plane](#Plane)
+- [Rover](#Rover)
+
+
 #### Copter
 
 #### Plane
