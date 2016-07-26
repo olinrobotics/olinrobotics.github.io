@@ -42,4 +42,10 @@ Note: Connects to POWER on PX4
 
 > ![GPS](../images/GPS.png)
  
-4 ESC Speed controllers- Consult http://ardupilot.org/copter/docs/connect-escs-and-motors.html for your specific type of quadcopter and plug the ESCs into Pixhawk MAIN OUT channels 1-4 in the correct order.
+#### 4 ESC Speed controllers
+
+Consult http://ardupilot.org/copter/docs/connect-escs-and-motors.html for your specific type of quadcopter and plug the ESCs into your Pixhawk's MAIN OUT channels 1-4 in the correct order.
+
+> ![ESC](../images/ESC.png)
+
+*This Git page is currently under construction.*
