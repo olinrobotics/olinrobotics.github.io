@@ -64,16 +64,56 @@ echo ${PIN} > /sys/class/gpio/unexport # Done with using PIN
 ```
 
 ####  C/C++
-Currently, ODROID only supports GPIO interfaces with C/C++.
 
 See [This Github Repo](https://github.com/yycho0108/GPIO_Interface) for Basic C++ interface with GPIO.
 
 For more sophisticated applications, see [This Github Repo](https://github.com/hardkernel/wiringPi).
 
+Currently, software PWM on wiringPi doesn't work on the ODROID C1/C1+.
+
+
+### PWM ON THE ODROID
+
+ODROID HAS 2 Hardware PWM output pins, 33 and 19.
+
+To use the PWM output module, follow the instructions below:
+
+```bash
+# START PWM MODULE IN KERNEL
+sudo modprobe pwm-meson npwm=1 #USING 1 PWM PIN (33)
+
+# ALTERNATIVELY, TO USE BOTH 33 and 19, run:
+#sudo modprobe pwm-meson npwm=2 #USING 1 PWM PIN (33, 19)
+
+# START PWM CONTROL
+sudo modprobe pwm-ctrl
+
+# CHANGE DIRECTORY
+cd /sys/devices/platform/pwm-ctrl
+
+# CONVENIENT ALIAS; NOT NECESSARY TO EXPORT.
+# ALTERNATIVELY, WRITE VALUES DIRECTLY INSTEAD OF DEREFERENCING VARIABLE.
+export DUTY_CYCLE=102 # 0 ~ 1023
+export FREQUENCY=1024 # IN Hz, 0 ~ 1000000
+
+# SET DUTY CYCLE
+echo ${DUTY_CYCLE} > duty0
+
+# ENABLE PWM
+echo 1 > enable0
+
+# SET FREQUENCY
+echo ${FREQUENCY} > freq0
+
+# WHEN YOU'RE DONE, REMOVE MODULES FROM KERNEL
+sudo modprobe -r pwm-ctrl
+sudo modprobe -r pwm-meson
+```
+
 ### Setting Up WiFi on the ODROID with a USB Dongle
 
 ```bash
-# FOLLOW THE STEPS SEQUENTIALLY EXCEPT [TIP]S
+# FOLLOW THE STEPS SEQUENTIALLY, EXCEPT [TIP]S
 # INSTALL THE TOOLS
 	sudo apt-get install wireless-tools wpasupplicant
 
@@ -103,7 +143,10 @@ For more sophisticated applications, see [This Github Repo](https://github.com/h
 # REBOOT ODROID
 	sudo reboot
 
-# RESTART wlan0 
+# ESTABLISH COMMUNICATION WITH ROUTER
+	sudo dhclient -v -r wlan0
+
+# RESTART wlan0
 	sudo ifconfig wlan0 down && sudo ifconfig wlan0 up
 
 # [TIP] IF YOU MESSED UP AND HAVE MULTIPLE PROCESSES RUNNING WPA_SUPPLICANT, GET RID OF THEM
