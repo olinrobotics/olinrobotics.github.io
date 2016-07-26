@@ -12,7 +12,7 @@ filename: pixhawk_info
 
 > ![Pixhawk](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Pixhawk.png)
 
-####DSM X Spectrum Satellite Receiver
+#### DSM X Spectrum Satellite Receiver
 
 > ![Receiver](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Receiver.jpg)
 
