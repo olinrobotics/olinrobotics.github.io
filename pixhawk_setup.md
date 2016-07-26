@@ -58,7 +58,7 @@ This is a list of the absolute minimum number of parts you need installed to ope
 
 #### Quadcopter
 
-To fly in Stabilize Mode, you will need...
+To fly in Stabilize Mode (on a copter) or drive in Manual mode (on a rover) you will need...
 
  - A Pixhawk with correct firmware and calibration uploaded
  - A [battery](http://images6.wheelspinmodels.co.uk/EFLB0998-a47e.jpg), typically a 3 cell (11.1 volts, 5100 milliamp-hours)
@@ -67,10 +67,11 @@ To fly in Stabilize Mode, you will need...
  - The same number of [ESCs](../images/ESC.png) as motors (Quad, Hex, Octo, etc etc -Copters only)
  - A motor controller, such as a [Sabertooth](https://www.dimensionengineering.com/datasheets/Sabertooth2x12.pdf) or a [Kangaroo](https://www.dimensionengineering.com/datasheets/KangarooManual.pdf) (Ground vehicles only)
  - An RC receiver radio, preferably a [DSMX](../images/Receiver.jpg) or equivalent
- - A safety switch
  - A RC transmitter that has been [bound](link) to the RC receiver
- - 
+ 
+To fly in Loiter or Auto Mode, or drive in Hold or Auto Mode, you will need...
+- All of the above
+- A [GPS](../images/GPS.png)
+- A Compass (Your Pixhawk contains an internal compass.)
 
-
-
-*This Git page is currently under construction.*
+Use of a [Buzzer](../images/Speaker.jpg) and [Telemetry equipment](../images/Telem.jpg) is optional, but highly encouraged, as they make debugging a lot easier (and safer!)
