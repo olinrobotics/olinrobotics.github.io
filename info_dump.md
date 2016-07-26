@@ -21,4 +21,6 @@ The Pixhawk, which is produced by 3DR, is the main flight controller currently i
 
 [Click here for instructions on installing new firmware](pixhawk_firmware)
 
+[Click here for instructions on binding your transmitter](binding_transmitter)
+
 *This Git page is currently under construction.*
