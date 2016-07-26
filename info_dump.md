@@ -18,5 +18,6 @@ Work towards this goal includes setting up odroid computers, multiple methods of
 The Pixhawk, which is produced by 3DR, is the main flight controller currently in use in the Olin Intelligent Vehicles Lab. Pixhawks enable easy monitoring of quadcopters and other robotic vehicles, for quick debugging, increased safety, and better data collection from missions. Pixhawks enable autonomous vehicles to travel to a series of GPS waypoints, which can be independently created, maintained, and edited from Ground Control Station.
 
 [Click here for basic Pixhawk layout and parts list](pixhawk_setup)
+[Click here for instructions on installing new firmware](pixhawk_firmware)
 
 *This Git page is currently under construction.*
