@@ -58,8 +58,8 @@ This is a list of the absolute minimum number of parts you need installed to ope
 
 If in Stabilize Mode, you will require...
 
-> - Pixhawk
-> - Battery
+> ###### - Pixhawk
+> ###### - Battery
 > - BEC voltage regulator
 > - The appropriate number of motors for your vehicle
 > - The same number of ESCs as motors (Quad, Hex, Octo, etc etc -Copters only)
