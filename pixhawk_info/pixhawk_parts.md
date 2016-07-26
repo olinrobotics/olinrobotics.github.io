@@ -1,7 +1,7 @@
 ---
 title: Pixhawk
 layout: template
-filename: pixhawk_info
+filename: pixhawk_parts
 ---
 
 # Pixhawk PX4 Documentation
