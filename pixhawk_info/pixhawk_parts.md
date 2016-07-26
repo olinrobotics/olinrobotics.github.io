@@ -10,11 +10,11 @@ filename: pixhawk_parts
 
 #### Pixhawk PX4 
 
-> ![Pixhawk](images/Pixhawk.png)
+> ![Pixhawk](./images/Pixhawk.png)
 
 #### DSM X Spectrum Satellite Receiver
 
-> ![Receiver](images/Receiver.jpg)
+> ![Receiver](./images/Receiver.jpg)
 
 #### Paired Telemetry Antennae
 
