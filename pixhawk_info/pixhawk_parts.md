@@ -1,5 +1,5 @@
 ---
-title: Pixhawk
+title: Pixhawk Parts
 layout: template
 filename: pixhawk_parts
 ---
