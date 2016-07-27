@@ -4,11 +4,16 @@ layout: template
 filename: binding_transmitters
 ---
 
-*This Github Page is currently under construction.*
+# Binding Your RC Receiver to Your RC Transmitter
 
-###### *Last edited on 7/27/16.*
+The precise instructions on how to bind your receiver to your transmitter will vary based on which model of transmitter you are using.
+
+This is the list of transmitters that are currently in use by the Olin Intelligent Vehicles Lab:
+- [Spektrum DX8 8 Channel Transmitter](#Spektrum_DX8_8_Channel_Transmitter)
 
 ## Spektrum DX8 8 Channel Transmitter
+
+![Transmitter](../images/Spektrum.png)
 
 While holding down the [click wheel](../images/click_wheel.png) on the transmitter, turn on the power switch.
 
@@ -28,3 +33,6 @@ In Mission Planner, click on Initial Setup, Mandatory Hardware, then on RC Calib
 Now, hold down the binding button (located on the top left side of your controller), and turn on the power. Your transmitter should now read "Binding, Model Name."
 
 Continue to hold down the binding button and watch your RC receiver. If you have a DSMX, its LED should blink orange, then settle into a steady orange glow. When you have successfully finished binding your receiver, your controller will return to its [usual screen](https://raw.githubusercontent.com/olinrobotics/olinrobotics.github.io/master/images/Spektrum.png) from the binding screen.
+
+*This Github Page is currently under construction.*
+*Last edited on 7/27/16.*
