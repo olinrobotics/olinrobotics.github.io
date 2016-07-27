@@ -10,6 +10,8 @@ filename: binding_transmitters
 
 ## Spektrum DX8 8 Channel Transmitter
 
+![Transmitter](../images/Spektrum.png)
+
 While holding down the [click wheel](../images/click_wheel.png) on the transmitter, turn on the power switch.
 
 This will take you to the [main menu](https://raw.githubusercontent.com/olinrobotics/olinrobotics.github.io/master/images/Spektrum.png).
