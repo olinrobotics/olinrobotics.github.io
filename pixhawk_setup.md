@@ -77,3 +77,11 @@ To fly in Loiter or Auto Mode, or drive in Hold or Auto Mode, you will need...
 Use of a [Buzzer](../images/Speaker.jpg) and [Telemetry equipment](../images/Telem.jpg) is optional, but highly encouraged, as they make debugging a lot easier (and safer!)
 
 [Click here for information on changing your Telemetry Net ID](https://olinrobotics.github.io/net_ids)
+
+## Installing the Firmware
+
+[Click here for instructions from Ardupilot on how to install the firmware](http://ardupilot.org/copter/docs/common-loading-firmware-onto-pixhawk.html)
+
+## Calibrating Settings
+[Compass Calibration Instructions](http://ardupilot.org/copter/docs/common-compass-calibration-in-mission-planner.html)
+
