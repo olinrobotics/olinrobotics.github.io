@@ -87,7 +87,10 @@ Use of a [Buzzer](../images/Speaker.jpg) and [Telemetry equipment](../images/Tel
 Calibrate these before your first flight.
 
 [Compass Calibration Instructions](http://ardupilot.org/copter/docs/common-compass-calibration-in-mission-planner.html)
+
 [Radio Calibration Instructions](http://ardupilot.org/copter/docs/common-radio-control-calibration.html)
+
 [Accelerometer Calibration Instructions](http://ardupilot.org/copter/docs/common-accelerometer-calibration.html)
+
 [Setting your Flight Modes](flight_modes)
 
