@@ -19,11 +19,11 @@ Use the click wheel to navigate to an unused vehicle slot (usually designated by
 Turn the controller off.
 Turn on your vehicle and connect to it via Mission Planner.
 
-In Mission Planner, click on Initial Setup, Mandatory Hardware, then on RC Calibration. Under "Spektrum Bind," click on the binding button that matches your current [RC receiver](../Receiver.png).
+In Mission Planner, click on Initial Setup, Mandatory Hardware, then on RC Calibration. Under "Spektrum Bind," click on the binding button that matches your current [RC receiver](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Receiver.png).
 
 ![Binding](../images/binding.png)
 
-[*Click here for a larger image.*](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/binding.png)
+[*Click here for a larger image.*](https://raw.githubusercontent.com/olinrobotics/olinrobotics.github.io/master/images/binding.png)
 
 Now, hold down the binding button (located on the top left side of your controller), and turn on the power. Your transmitter should now read "Binding, Model Name."
 
