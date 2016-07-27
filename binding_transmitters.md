@@ -41,7 +41,7 @@ Now, hold down the binding button (located on the top left side of your controll
 
 Continue to hold down the binding button and watch your RC receiver. If you have a DSMX, its LED should blink orange, then settle into a steady orange glow. When you have successfully finished binding your receiver, your controller will return to its [usual screen](https://raw.githubusercontent.com/olinrobotics/olinrobotics.github.io/master/images/Spektrum.png) from the binding screen.
 
-## Spektrum DX18 Transmitter
+## [Spektrum DX18 Transmitter](http://www.spektrumrc.com/Products/Default.aspx?ProdId=SPM18100)
 
 ![DX18](http://www.spektrumrc.com/Content/ProductStatic/SPM18100/images/DX18(V2).png)
 
