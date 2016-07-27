@@ -6,7 +6,7 @@ filename: pixhawk_parts
 
 # Pixhawk PX4 Documentation
 
-###### *Last edited on 7/26/2016*
+###### *Last edited on 7/27/2016*
 
 ## PX4 Setup- Parts Breakdown
 
