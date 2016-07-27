@@ -12,7 +12,7 @@ filename: binding_transmitters
 
 While holding down the [click wheel](../images/click_wheel.png) on the transmitter, turn on the power switch.
 
-This will take you to the [main menu](link).
+This will take you to the [main menu](https://raw.githubusercontent.com/olinrobotics/olinrobotics.github.io/master/images/Spektrum.png).
 
 Use the click wheel to navigate to an unused vehicle slot (usually designated by "Acro"), then press the click wheel until you feel a click. This will select your highlighted vehicle as your current vehicle. Press the back button (located to the left of the screen) on the controller to double check that you have the correct vehicle.
 
@@ -27,4 +27,4 @@ In Mission Planner, click on Initial Setup, Mandatory Hardware, then on RC Calib
 
 Now, hold down the binding button (located on the top left side of your controller), and turn on the power. Your transmitter should now read "Binding, Model Name."
 
-Continue to hold down the binding button and watch your RC receiver. If you have a DSMX, its LED should blink orange, then settle into a steady orange glow. When you have successfully finished binding your receiver, your controller will return to its [usual screen](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Spektrum.png) from the binding screen.
+Continue to hold down the binding button and watch your RC receiver. If you have a DSMX, its LED should blink orange, then settle into a steady orange glow. When you have successfully finished binding your receiver, your controller will return to its [usual screen](https://raw.githubusercontent.com/olinrobotics/olinrobotics.github.io/master/images/Spektrum.png) from the binding screen.
