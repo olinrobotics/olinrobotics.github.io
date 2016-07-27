@@ -75,3 +75,5 @@ To fly in Loiter or Auto Mode, or drive in Hold or Auto Mode, you will need...
 - A Compass (Your Pixhawk contains an internal compass.)
 
 Use of a [Buzzer](../images/Speaker.jpg) and [Telemetry equipment](../images/Telem.jpg) is optional, but highly encouraged, as they make debugging a lot easier (and safer!)
+
+[Click here for information on changing your Telemetry Net ID](https://olinrobotics.github.io/net_ids)
