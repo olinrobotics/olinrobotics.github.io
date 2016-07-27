@@ -28,6 +28,8 @@ This is a omprehensive list of all Telemetry Net IDs currently in use by the Oli
 
 ![NetID](../images/NetID.png)
 
+[*Click here for a larger image*](../images/NetID.png)
+
 1. Connect your vehicle to battery power and turn it on. 
 2. Connect your ground control Telemetry unit to your computer via a miniUSB to USB cable.
 3. Do not connect via telemetry to Mission Planner. Disconnect if you have already connected.
