@@ -83,5 +83,11 @@ Use of a [Buzzer](../images/Speaker.jpg) and [Telemetry equipment](../images/Tel
 [Click here for instructions from Ardupilot on how to install the firmware](http://ardupilot.org/copter/docs/common-loading-firmware-onto-pixhawk.html)
 
 ## Calibrating Settings
+
+Calibrate these before your first flight.
+
 [Compass Calibration Instructions](http://ardupilot.org/copter/docs/common-compass-calibration-in-mission-planner.html)
+[Radio Calibration Instructions](http://ardupilot.org/copter/docs/common-radio-control-calibration.html)
+[Accelerometer Calibration Instructions](http://ardupilot.org/copter/docs/common-accelerometer-calibration.html)
+[Setting your Flight Modes](flight_modes)
 
