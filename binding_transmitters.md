@@ -6,6 +6,16 @@ filename: binding_transmitters
 
 *This Github Page is currently under construction.*
 
-###### *Last edited on 7/26/16.*
+###### *Last edited on 7/27/16.*
 
-> ![Construction](http://thumbnails.billiondigital.com/482/945482/824100_small_checkboard.jpg)
+## Spektrum DX8 8 Channel Transmitter
+
+While holding down the [click wheel](link) on the transmitter, turn on the power switch.
+
+This will take you to the [main menu](link).
+
+Use the click wheel to navigate to an unused vehicle slot (usually designated by "Acro"), then press the click wheel until you feel a click. This will select your highlighted vehicle as your current vehicle. Press the back button (located to the left of the screen) on the controller to double check that you have the correct vehicle.
+
+Turn the controller off
+
+Select
