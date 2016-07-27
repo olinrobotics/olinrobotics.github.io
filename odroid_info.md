@@ -102,7 +102,7 @@ To use the PWM output module, follow the instructions below:
 sudo modprobe pwm-meson npwm=1 #USING 1 PWM PIN (33)
 ```
 Alternatively, to use both pins (33 and 19), run:
-```
+```bash
 #sudo modprobe pwm-meson npwm=2 #USING 1 PWM PIN (33, 19)
 ```
 
