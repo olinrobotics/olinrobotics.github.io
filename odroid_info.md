@@ -78,86 +78,110 @@ ODROID HAS 2 Hardware PWM output pins, 33 and 19.
 
 To use the PWM output module, follow the instructions below:
 
+
+1. First, start the PWM module in the kernel. Specify the number of PWM pins to use.
 ```bash
-# START PWM MODULE IN KERNEL
 sudo modprobe pwm-meson npwm=1 #USING 1 PWM PIN (33)
-
-# ALTERNATIVELY, TO USE BOTH 33 and 19, run:
+```
+Alternatively, to use both pins (33 and 19), run:
+```
 #sudo modprobe pwm-meson npwm=2 #USING 1 PWM PIN (33, 19)
+```
 
+2. Begin the PWM control module in the kernel.
+```
 # START PWM CONTROL
 sudo modprobe pwm-ctrl
+```
 
+3. Change directory to avoid supplying absolute paths.
+```
 # CHANGE DIRECTORY
 cd /sys/devices/platform/pwm-ctrl
+```
 
-# CONVENIENT ALIAS; NOT NECESSARY TO EXPORT.
-# ALTERNATIVELY, WRITE VALUES DIRECTLY INSTEAD OF DEREFERENCING VARIABLE.
+4. Set your parameters.
+```
 export DUTY_CYCLE=102 # 0 ~ 1023
 export FREQUENCY=1024 # IN Hz, 0 ~ 1000000
+```
 
-# SET DUTY CYCLE
+5. Launch PWM.
+```
 echo ${DUTY_CYCLE} > duty0
-
-# ENABLE PWM
 echo 1 > enable0
-
-# SET FREQUENCY
 echo ${FREQUENCY} > freq0
+```
 
-# WHEN YOU'RE DONE, REMOVE MODULES FROM KERNEL
+6. When you're done, remove the loaded modules from the kernel.
+```
 sudo modprobe -r pwm-ctrl
 sudo modprobe -r pwm-meson
 ```
 
 ### Setting Up WiFi on the ODROID with a USB Dongle
 
+
+1. First, install the necessary tools:
 ```bash
-# FOLLOW THE STEPS SEQUENTIALLY, EXCEPT [TIP]S
-# INSTALL THE TOOLS
-	sudo apt-get install wireless-tools wpasupplicant
+sudo apt-get install wireless-tools wpasupplicant
+```
 
-# [TIP] STATUS-CHECKING
-	dmesg | tail # CHECKS GENERAL DEVICE STATUS (AND OUTPUT THE END OF IT)
-	iwconfig # CHECKS WIRELESS DEVICE STATUS
-	ifconfig # CHECKS GENERAL NETWORK STATUS
+2. Check that the ODROID recognizes the device and loads the proper driver:
+```
+dmesg | tail
+```
 
-# SCAN FOR AVAILABLE NETWORKS (CHECK THAT DEVICE FUNCTIONS PROPERLY)
-	sudo iwlist wlan0 scan
+3. Scan for available networks to check that the device functions properly.
+```bash
+sudo iwlist wlan0 scan
+```
 
-# CONFIGURE NETWORK INTERFACES
-	sudo -s #BECOME ROOT
-	echo -e "\nauto wlan0 \niface wlan0 inet dhcp \n\twpa-ssid OLIN-ROBOTICS\n\twpa-psk R0B0TS-RULE" >> /etc/network/interfaces
+4. Configure the network interfaces. In order to access the file, you need to become root. Type the password when prompted.
+```bash
+sudo -s
+echo -e "\nauto wlan0 \niface wlan0 inet dhcp \n\twpa-ssid OLIN-ROBOTICS\n\twpa-psk R0B0TS-RULE" >> /etc/network/interfaces
+```
 
-# CONFIGURE WPA FOR YOUR NETWORK
-	wpa_passphrase  OLIN-ROBOTICS >> /etc/wpa_supplicant/wpa_supplicant_OLIN-ROBOTICS.conf 
+5. Configure the WPA credentials for your network.
+```bash
+wpa_passphrase  OLIN-ROBOTICS >> /etc/wpa_supplicant/wpa_supplicant_OLIN-ROBOTICS.conf 
+```
 
-# START WPA_SUPPLICANT (TRY TO CONNECT TO NETWORK WITH GIVEN CONFIGURATION)
-	sudo wpa_supplicant -B -D wext -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant_OLIN-ROBOTICS.conf 
-	ip link show wlan0 | grep UP
+6. Try to connect to network with the given configuration. You should see an output with UP highlighted.
+```bash
+sudo wpa_supplicant -B -D wext -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant_OLIN-ROBOTICS.conf 
+ip link show wlan0 | grep UP
+```
+Tip : if you messed up and have multiple processes running wpa_supplicant, get rid of them:
+```bash
+ps -ef | grep  "wpa_"
+sudo kill $(pgrep -f "wpa_supplicant -B")
+```
 
-# ALTERNATIVELY, START WPA_SUPPLICANT WITH LOG
-	sudo wpa_supplicant -B -D wext -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant_OLIN-ROBOTICS.conf  -f /var/log/wpa_supplicant.log
-	cat /var/log/wpa_supplicant.log 
+7. Setup IP with the router.
+```bash
+sudo dhclient -v -r wlan0
+```
 
-# REBOOT ODROID
-	sudo reboot
+8. Restart wlan0.
+```bash
+sudo ifconfig wlan0 down && sudo ifconfig wlan0 up
+```
 
-# ESTABLISH COMMUNICATION WITH ROUTER
-	sudo dhclient -v -r wlan0
+9. Check network connection status.
+```
+iwconfig # CHECKS WIRELESS DEVICE STATUS
+ifconfig # CHECKS GENERAL NETWORK STATUS
+```
 
-# RESTART wlan0
-	sudo ifconfig wlan0 down && sudo ifconfig wlan0 up
+10. Check subnet connectivity.
+```bash
+ping <your_computer_ip>
+```
+(your computer should be connected to OLIN-ROBOTICS, if you configured your WPA credentials with OLIN-ROBOTICS)
 
-# [TIP] IF YOU MESSED UP AND HAVE MULTIPLE PROCESSES RUNNING WPA_SUPPLICANT, GET RID OF THEM
-	ps -ef | grep  "wpa_"
-	sudo kill $(pgrep -f "wpa_supplicant -B")
-
-# CHECK SUBNET CONNECTIVITY
-	ping 192.168.16.73
-
-# CHECK EXTERNAL NETWORK CONNECTIVITY (DISABLE NETWORK SHARING VIA ETHERNET CABLE IF YOU HAVE IT SET UP)
-	ping www.google.com
-
-# IF YOU'RE HERE, THEN YOU SHOULD BE ALL SET UP
+11. Check External Network Connectivity. Disable network sharing via ethernet cable if you had it set up, to verify the connection.
+```bash
+ping www.google.com
 ```
