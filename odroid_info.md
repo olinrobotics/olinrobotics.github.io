@@ -205,21 +205,21 @@ To use the PWM output module, follow the instructions below:
    sudo ifconfig wlan0 down && sudo ifconfig wlan0 up
    ```
 
-9. Check subnet connectivity. Your computer should be connected to OLIN-ROBOTICS, if you configured your WPA credentials with OLIN-ROBOTICS.
+9. Check network connection status.
+
+   ```bash
+   iwconfig # CHECKS WIRELESS DEVICE STATUS
+   ifconfig # CHECKS GENERAL NETWORK STATUS
+   ```
+
+2. Check subnet connectivity. Your computer should be connected to OLIN-ROBOTICS, if you configured your WPA credentials with OLIN-ROBOTICS.
 
    ```bash
    ping <your_computer_ip>
    ```
 
-10. Check External Network Connectivity. Disable network sharing via ethernet cable if you had it set up, to verify the connection.
+2. Check External Network Connectivity. Disable network sharing via ethernet cable if you had it set up, to verify the connection.
 
    ```bash
    ping www.google.com
-   ```
-
-11. Check network connection status.
-
-   ```bash
-   iwconfig # CHECKS WIRELESS DEVICE STATUS
-   ifconfig # CHECKS GENERAL NETWORK STATUS
    ```
