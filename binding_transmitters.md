@@ -14,11 +14,11 @@ This is the list of transmitters that are currently in use by the Olin Intellige
 - [Spektrum DX8 8 Channel Transmitter](#Spektrum_DX8_8_Channel_Transmitter)
 - [Spektrum DX18 Transmitter](#Spektrum_DX18_Transmitter)
 
-## Spectrum DX7 Transmitter
+## [Spectrum DX7 Transmitter](http://www.bladehelis.com/Products/Support.aspx?ProdID=SPM27201)
 
 ![DX7](http://www.spektrumrc.com/ProdInfo/SPM/450/SPM2731-450.jpg)
 
-## Spektrum DX8 8 Channel Transmitter
+## [Spektrum DX8 8 Channel Transmitter](http://www.spektrumrc.com/Products/Default.aspx?ProdId=SPM8800)
 
 ![Transmitter](../images/Spektrum.png)
 
