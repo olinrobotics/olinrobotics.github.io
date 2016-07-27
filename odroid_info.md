@@ -6,6 +6,19 @@ filename: odroid_info
 
 # Odroid and Inter Computer Communication Documentation
 
+## Contents
+- [Odroid Setup](#odroid-setup)
+- [Using the Odroid](#using-the-odroid)
+- [Odroid and ROS](#odroid-and-ros)
+- [Using GPIO pins](#using-gpio-pins-on-the-odroid)
+- [PWM on odroid](#pwm-on-the-odroid)
+- [Setup Wifi Dongle](#setting-up-wifi-on-the-odroid-with-a-usb-dongle)
+
+## Useful Links
+- [flashing os images to sd cards](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md)
+- [ARM ros install](http://wiki.ros.org/indigo/Installation/UbuntuARM)
+- [ROS setup shell scripts repository](https://github.com/olinrobotics/Odroid_Setup)
+
 ## Odroid Setup
 There were a couple of places we had to go to setup the Odroid:
 
@@ -50,11 +63,16 @@ Congratulations, you now have a terminal which is actually running commands on a
 ### Directly edit the SD card
 The odroid stores its entire file system on an SD card. This means that you can take that SD card out of the Odroid, plug it into your computer, and edit any files you want.  You use this method to set the resolution of the monitor in the boot.ini file before the first boot up.  It is also useful for getting files onto the Odroid, and can even be the primary method of interacting with the Odroid, especially if it is set up to run your code on startup.
 
-### Using GPIO Pins on the ODROID
+## Odroid and ROS
+We used [these instructions](http://wiki.ros.org/indigo/Installation/UbuntuARM) to install ROS on the ODROID.  They worked fine, so you should be able to just follow them.
+
+Once ROS is installed, you can run roscore as well as any programs which use ROS, but more setup is needed to be able to communicate with a roscore on the odroid from another computer.  We set up a [github repository](https://github.com/olinrobotics/Odroid_Setup) with some shell scripts to automatically setup the odroid to communicate with other computers.  These scripts set the `ROS_MASTER_URI` and `ROS_IP` variables to point at the correct IP address so that other computers can see the roscore running on the odroid.  Instructions for using these scripts are in that repository's README.
+
+## Using GPIO Pins on the ODROID
 
 ![pinout](images/odroid_pins.png)
 
-#### CLI
+### CLI
 
 ```bash
 echo ${PIN} > /sys/class/gpio/export # PIN = whichever GPIO pin you decided to use
@@ -63,7 +81,7 @@ echo ${VALUE} > /sys/class/gpio/gpio${PIN}/value # VALUE = 1 for HIGH and 0 for 
 echo ${PIN} > /sys/class/gpio/unexport # Done with using PIN
 ```
 
-####  C/C++
+###  C/C++
 
 See [This Github Repo](https://github.com/yycho0108/GPIO_Interface) for Basic C++ interface with GPIO.
 
@@ -72,7 +90,7 @@ For more sophisticated applications, see [This Github Repo](https://github.com/h
 Currently, software PWM on wiringPi doesn't work on the ODROID C1/C1+.
 
 
-### PWM ON THE ODROID
+## PWM ON THE ODROID
 
 ODROID HAS 2 Hardware PWM output pins, 33 and 19.
 
@@ -119,7 +137,7 @@ sudo modprobe -r pwm-ctrl
 sudo modprobe -r pwm-meson
 ```
 
-### Setting Up WiFi on the ODROID with a USB Dongle
+## Setting Up WiFi on the ODROID with a USB Dongle
 
 
 1. First, install the necessary tools:
