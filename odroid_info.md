@@ -100,11 +100,17 @@ To use the PWM output module, follow the instructions below:
 1. First, start the PWM module in the kernel. Specify the number of PWM pins to use.
 
 	```bash
+	
 	sudo modprobe pwm-meson npwm=1 #USING 1 PWM PIN (33)
+	
 	```
+	
 	Alternatively, to use both pins (33 and 19), run:
+	
 	```bash
+	
 	#sudo modprobe pwm-meson npwm=2 #USING 1 PWM PIN (33, 19)
+	
 	```
 
 2. Begin the PWM control module in the kernel.
@@ -205,7 +211,7 @@ To use the PWM output module, follow the instructions below:
 
 9. Check network connection status.
 
-	```
+	```bash
 	iwconfig # CHECKS WIRELESS DEVICE STATUS
 	ifconfig # CHECKS GENERAL NETWORK STATUS
 	```
