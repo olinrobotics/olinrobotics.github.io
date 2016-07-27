@@ -27,4 +27,4 @@ In Mission Planner, click on Initial Setup, Mandatory Hardware, then on RC Calib
 
 Now, hold down the binding button (located on the top left side of your controller), and turn on the power. Your transmitter should now read "Binding, Model Name."
 
-Continue to hold down the binding button and watch your RC receiver. If you have a DSMX, its LED should blink orange, then settle into a steady orange glow. When you have successfully finished binding your receiver, your controller will return to its [usual screen](../images/Spektrum.png) from the binding screen.
+Continue to hold down the binding button and watch your RC receiver. If you have a DSMX, its LED should blink orange, then settle into a steady orange glow. When you have successfully finished binding your receiver, your controller will return to its [usual screen](https://github.com/olinrobotics/olinrobotics.github.io/blob/master/images/Spektrum.png) from the binding screen.
