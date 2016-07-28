@@ -83,12 +83,11 @@ echo ${PIN} > /sys/class/gpio/unexport # Done with using PIN
 
 ###  C/C++
 
-See [This Github Repo](https://github.com/yycho0108/GPIO_Interface) for Basic C++ interface with GPIO.
+See [This Github Repo](https://github.com/olinrobotics/Odroid_Setup/tree/master/gpio) for Basic C++ interface with GPIO.
 
 For more sophisticated applications, see [This Github Repo](https://github.com/hardkernel/wiringPi).
 
 Currently, software PWM on wiringPi doesn't work on the ODROID C1/C1+.
-
 
 ## PWM ON THE ODROID
 
