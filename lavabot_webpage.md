@@ -12,6 +12,6 @@ filename: lavabot_webpage
 
 ![Nana](../images/2016.7.14_Lavabot.JPG)
 
-[Watch Nana drive](https://drive.google.com/file/d/0B6cEozG9ml5MMllVY1gzU2VQMEU/view?usp=sharing)
+[Watch Nana drive](https://drive.google.com/open?id=0B6cEozG9ml5MTW4tWkdSQzNXMG8)
 
 *This Github page is currently under construction.*
