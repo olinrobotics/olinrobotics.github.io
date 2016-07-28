@@ -25,8 +25,8 @@ This is a omprehensive list of all Telemetry Net IDs currently in use by the Oli
 - 103: Fixed Wing
 - 104: Apprentice
 - 105: Bixler
-- 154:
-- 254:
+- 154: DARPA
+- 254: DARPA
 
 ## How to Set your Telemetry Net ID
 
