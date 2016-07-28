@@ -17,7 +17,7 @@ filename: lavabot_webpage
 ###### *[Electrical Diagram](../images/2016.7.20 Wiring Diagram.JPG) | [Mechanical Diagram](../images/2016.7.28 Mechanical Diagram.JPG)*
 
 
-## [Watch Nana drive](https://drive.google.com/open?id=0B6cEozG9ml5MTW4tWkdSQzNXMG8)
+### [Watch Nana drive](https://drive.google.com/open?id=0B6cEozG9ml5MTW4tWkdSQzNXMG8)
 
 
 ## April Tag Recognition
@@ -34,8 +34,8 @@ Our current fiducial detection system is capable of tracking and detecting the o
 
 ![Detection](../images/2016.7.28_ImageRecognition_Tracking.JPG)
 
-[See our code in action](https://drive.google.com/file/d/0B6cEozG9ml5MRDA3VThmT3BteWM/view?usp=sharing)
+### [See our code in action](https://drive.google.com/file/d/0B6cEozG9ml5MRDA3VThmT3BteWM/view?usp=sharing)
 
-[How we did it](https://olinrobotics.github.io/odroid_info#setup-arpose)
+### [How we did it](https://olinrobotics.github.io/odroid_info#setup-arpose)
 
 *This Github page is currently under construction. Last edited on 7/28/16.*
