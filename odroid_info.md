@@ -13,6 +13,7 @@ filename: odroid_info
 - [Using GPIO pins](#using-gpio-pins-on-the-odroid)
 - [PWM on odroid](#pwm-on-the-odroid)
 - [Setup Wifi Dongle](#setting-up-wifi-on-the-odroid-with-a-usb-dongle)
+- [Setup AR_POSE](#setup-ar_pose)
 
 ## Useful Links
 - [flashing os images to sd cards](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md)
@@ -221,4 +222,196 @@ To use the PWM output module, follow the instructions below:
 
    ```bash
    ping www.google.com
+   ```
+
+## Setup AR_POSE 
+
+### Installing AR_POSE
+1. Download ar_tools package from the repository.
+
+   ```bash
+   rosmake rviz rosbag
+   cd ~/catkin_ws/
+   git clone https://github.com/ar-tools/ar_tools.git
+   ```
+
+2. Run the script to fetch the ar marker data.
+   ```bash
+   roscd ar_pose/demo
+   ./setup_demos
+   ```
+
+3. Install Camera Drivers.
+
+   ```bash
+   sudo apt-get install ros-indigo-libuvc*
+   sudo apt-get install ros-indigo-uvc-camera
+   ```
+
+4. Build artoolkit first, to prevent errors.
+
+   ```bash
+   catkin_make --only-pkg-with-deps artoolkit
+   ```
+
+5. In order to avoid inexplicable crashes, comment out everything related to ar_multi.
+
+   ```bash
+   roscd ar_pose
+   vim CMakeLists.txt
+   ```
+
+6. Make the package with flags to remove the whitelist for artoolkit.
+
+   ```bash
+   catkin_make -DCATKIN_WHITELIST_PACKAGES=""
+   ```
+
+### Calibrating the camera
+
+1. Plug in your oCam to a usb port and verify the connection.
+
+   ```bash
+   dmesg | tail
+   lsusb
+   ls /dev/video*
+   ```
+
+   Example output:
+
+   ```bash
+   [12697.053929] wlan0: Limiting TX power to 15 (15 - 0) dBm as advertised by f8:c0:01:a1:37:45
+   [14905.712196] usb 3-2: new SuperSpeed USB device number 2 using xhci_hcd
+   [14905.728884] usb 3-2: LPM exit latency is zeroed, disabling LPM.
+   [14905.729589] usb 3-2: New USB device found, idVendor=04b4, idProduct=00f9
+   [14905.729591] usb 3-2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+   [14905.729593] usb 3-2: Product: oCam-5CRO-U
+   [14905.729594] usb 3-2: Manufacturer: WITHROBOT Inc.
+   [14905.729595] usb 3-2: SerialNumber: SN_2736C011
+   [14905.729966] uvcvideo: Found UVC 1.00 device oCam-5CRO-U (04b4:00f9)
+   [14905.731167] input: oCam-5CRO-U as /devices/pci0000:00/0000:00:14.0/usb3/3-2/3-2:1.0/input/input19
+   Bus 001 Device 005: ID 0a5c:5800 Broadcom Corp. BCM5880 Secure Applications Processor
+   Bus 001 Device 004: ID 0c45:6709 Microdia 
+   Bus 001 Device 003: ID 8087:0a2a Intel Corp. 
+   Bus 001 Device 002: ID 8087:8001 Intel Corp. 
+   Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+   Bus 003 Device 002: ID 04b4:00f9 Cypress Semiconductor Corp. 
+   Bus 003 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+   Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+   /dev/video0
+   ```
+
+2. Install the packages for handling images over ros and camera calibration.
+
+   ```bash
+   sudo apt-get install ros-indigo-image-proc
+   rosdep install image_proc
+   sudo apt-get install ros-indigo-camera-calibration
+   ```
+
+3. Begin publishing the data from the camera to ROS in a terminal.
+
+   ```bash
+   rosrun uvc_camera uvc_camera_node _device:="/dev/video0" 
+   ```
+
+4. Open another tab in your terminal (CTRL-SHIFT-T) and begin Calibrating.
+
+   ```bash
+   rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.496 image:=/image_raw camera:=/
+   ```
+
+   When calibrating, it takes about 40 samples. It may take more, depending on the quality of each sample.
+
+   To obtain a variety of samples with X,Y,Z(size) and Skew values, move the Chessboard around in different orientations.
+
+   Calibrating on the ODROID is slow, so you might want to calibrate on your computer and only copy the camera.yaml over to the odroid (not tested).
+
+   When enough samples are gathered, the CALIBRATE button will turn green. Press on it to view the results.
+
+   When you're satisfied, click SAVE and COMMIT. In the first terminal, Take note of the path where camera.yaml is saved.
+
+5. Move the camera.yaml file to the default directory where ar_pose looks for:
+
+   ```bash
+   mv ~/.ros/camera_info/camera.yaml /opt/ros/indigo/share/uvc_camera/camera_calibration.yaml
+   ```
+
+   Alternatively, edit your ar_pose_single.launch file and edit the camera_info_url parameter to point to the absolute **URL** of your .yaml file.
+   For instance, it may look like **file:///home/odroid/.ros/camera_info/camera.yaml**.
+
+### Running ar_pose 
+
+1. Open the launch configuration as follows:
+
+   ```bash
+   roscd ar_pose/launch
+   vim ar_pose_single.launch
+   ```
+
+2. In ar_pose_single.launch, change camera_node to uvc_camera_node.
+
+   Then, change the device parameter to your camera device input (e.g. /dev/video0).
+
+   Finally, check the width and height parameters under uvc_camera_node and verify that they match the ones in the camera.yaml file.
+
+   (camera.yaml file is the one produced by camera_calibration)
+
+   For me, the resolution was 640x480.
+
+3. To run ar_pose:
+
+   ```bash
+   roslaunch ar_pose ar_pose_single.launch
+   ```
+
+4. If rviz fails, fix the libpcre library:
+
+   ```bash
+   wget http://ports.ubuntu.com/pool/main/p/pcre3/libpcre3_8.35-7.1ubuntu1_armhf.deb
+   sudo dpkg -i libpcre3_8.35-7.1ubuntu1_armhf.deb
+   ```
+
+### If ar_pose still fails 
+
+1. To view images over ros topic, install:
+
+   ```bash
+   sudo apt-get install ros-indigo-image-view
+   ```
+
+2. Open a terminal and launch a camera instance.
+
+   ```bash
+   export ROS_NAMESPACE=my_camera
+   rosrun uvc_camera uvc_camera_node _device:="/dev/video0"_width:=${WIDTH} _height:=${HEIGHT} _camera_info_url:="file:///home/odroid/path/to/yaml/file/camera_calibration.yaml"
+   ```
+
+   Note that you have to provide the *camera_info_url* to match the path in **YOUR** odroid. The script will not run properly as written.
+
+3. Check that the camera calibration info was properly loaded.
+
+   ```bash
+   rostopic echo /my_camera/camera_info
+   verify that most of the parameters are nonzero.
+   ```
+
+4. Open up another tab in your terminal and run image_proc node.
+
+   ```bash
+   export ROS_NAMESPACE=my_camera
+   rosrun image_proc image_proc image:=/image_raw
+   ```
+
+5. Open up another tab in your terminal to view the rectified image.
+
+   ```bash
+   rosrun image_view image_view image:=/my_camera/image_rect
+   verify that you're getting an image.
+   ```
+
+6. To view the connections between the nodes and the topics, run:
+
+   ```bash
+   rqt_graph
    ```
