@@ -4,4 +4,16 @@ layout: template
 filename: important_params
 --- 
 
+# Important Parameters
+
+###### Find a full list of parameters [here.](http://ardupilot.org/copter/docs/parameters.html)
+
+## [ARMING_REQUIRE](http://ardupilot.org/plane/docs/arming-throttle.html)
+
+ARMING_REQUIRE=0: Throttle arming is disabled, meaning the safety switch is reponsible for arming and disarming the vehicle.
+ARMING_REQUIRE=1: Before the user arms throttle, minimum PWM is sent to the throttle channel. This may result in the vehicle moving before being throttle armed.
+ARMING_REQUIRE=2: Before the user arms throttle, no PWM signal is sent to the throttle channel. This ensures the vehicle will not move when disarmed, but may result in some ESCs beeping angrily.
+
+## [ARMING_CHECK]()
+
 *This webpage is currently under construction. Last edited on 7/28/2016.*
