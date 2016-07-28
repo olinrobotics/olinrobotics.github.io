@@ -10,11 +10,11 @@ The precise instructions on how to bind your receiver to your transmitter will v
 
 This is the list of transmitters that are currently in use by the Olin Intelligent Vehicles Lab:
 
-- [Spektrum DX5e Transmitter](#Spektrum_DX5e_Transmitter)
-- [Spectrum DX7 Transmitter](#Spectrum_DX7_Transmitter)
-- [Spektrum DX8 8 Channel Transmitter](#Spektrum_DX8_8_Channel_Transmitter)
-- [Spektrum DX18 Transmitter](#Spektrum_DX18_Transmitter)
-- [JR XP8103](#JR_XP8103)
+- [Spektrum DX5e Transmitter](#spektrum_dx5e_transmitter)
+- [Spectrum DX7 Transmitter](#spectrum_dx7_transmitter)
+- [Spektrum DX8 8 Channel Transmitter](#spektrum_dx8_8_channel_transmitter)
+- [Spektrum DX18 Transmitter](#spektrum_dx18_transmitter)
+- [JR XP8103](#jr_xp8103)
 
 ## [Spektrum DX5e Transmitter](http://www.spektrumrc.com/Products/Default.aspx?ProdId=SPM5500)
 
