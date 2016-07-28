@@ -12,9 +12,11 @@ filename: important_params
 
 Arming Require controls whether throttle arming is used in addition to the safety switch, and how much voltage is sent to the motors prior to throttle arming.
 
-ARMING_REQUIRE=0: Throttle arming is disabled, meaning the safety switch is reponsible for arming and disarming the vehicle.
-ARMING_REQUIRE=1: Before the user arms throttle, minimum PWM is sent to the throttle channel. This may result in the vehicle moving before being throttle armed.
-ARMING_REQUIRE=2: Before the user arms throttle, no PWM signal is sent to the throttle channel. This ensures the vehicle will not move when disarmed, but may result in some ESCs beeping angrily.
+| ARMING_REQUIRE | Effect                                                                                                                                                                           |
+|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0              | Throttle arming is disabled, meaning the safety switch is reponsible for arming and disarming the vehicle.                                                                       |
+| 1              | Before the user arms throttle, minimum PWM is sent to the throttle channel. This may result in the vehicle moving before being throttle armed.                                   |
+| 2              | Before the user arms throttle, no PWM signal is sent to the throttle channel. This ensures the vehicle will not move when disarmed, but may result in some ESCs beeping angrily. |
 
 ## [ARMING_CHECK](http://ardupilot.org/copter/docs/parameters.html#arming-check-arming-check)
 
