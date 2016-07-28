@@ -19,6 +19,8 @@ filename: lavabot_webpage
 
 April Tags are a system of visual fiducial tags used to encode information in small, easily detected patterns of squares.
 
+![Tags](../images/april_tags.png)
+
 Our eventual goal is to use strategically placed April Tags to 
 
 *This Github page is currently under construction.*
