@@ -12,4 +12,6 @@ filename: lavabot_webpage
 
 ![Nana](../images/2016.14.7 Lavabot.JPG)
 
+![Nana](../images/2016.28.7 Lavabot.JPG)
+
 *This Github page is currently under construction.*
