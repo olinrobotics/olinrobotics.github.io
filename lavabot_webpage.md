@@ -14,6 +14,8 @@ filename: lavabot_webpage
 
 ###### *T-Rex Manual: [Page 1](../images/trex_docpg1.JPG) [Page 2](../images/trex_docpg2.JPG) [Page 3](../images/trex_docpg3.JPG)*
 
+*[Electrical Diagram](../images/2016.7.20 Wiring Diagram.JPG) | [Mechanical Diagram](../images/2016.7.28 Mechanical Diagram.JPG)*
+
 #### [Watch Nana drive](https://drive.google.com/open?id=0B6cEozG9ml5MTW4tWkdSQzNXMG8)
 
 
