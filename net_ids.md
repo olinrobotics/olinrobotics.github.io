@@ -18,6 +18,7 @@ This can be disastrous in Auto mode, as vehicles may move unpredictably.
 This is a omprehensive list of all Telemetry Net IDs currently in use by the Olin Intelligent Vehicles Lab, and which projects they are assigned to.
 25 is the default number set by Mission Planner.
 
+These net IDs are taken:
 - 40: Lavabot
 - 42: Lavabot (spare)
 - 101: Fixed Wing
