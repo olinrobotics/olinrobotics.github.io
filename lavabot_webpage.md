@@ -31,4 +31,6 @@ Our current fiducial detection system is capable of tracking and detecting the o
 
 [See our code in action](https://drive.google.com/file/d/0B6cEozG9ml5MRDA3VThmT3BteWM/view?usp=sharing)
 
+[How we did it](https://olinrobotics.github.io/odroid_info#setup-arpose)
+
 *This Github page is currently under construction. Last edited on 7/28/16.*
