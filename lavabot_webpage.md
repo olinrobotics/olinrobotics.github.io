@@ -10,6 +10,6 @@ filename: lavabot_webpage
 
 #### Nananana Makakiʻi: The Track T-Rex
 
-![Nana](../images/2016.7.14_Lavabot.JPG)
+![Nana](../images/2016.7.14_Lavabot.jpg)
 
 *This Github page is currently under construction.*
