@@ -26,7 +26,7 @@ filename: index
 ### LavaBot
   LavaBot is a dual-faceted mission: A squadron of fully autonomous land and air vehicles will be utilized to climb a volcano and retrieve samples from within it. To achieve these objectives, the air vehicles must be able to identify paths up the volcano and relay those paths to the ground vehicles. In addition, we must be able to autonomously land multirotors on small platforms mounted on the moving land vehicles, charge them from the landing platforms, and launch them again to collect samples from within the volcano.
   
-  [Click here for more information about Lavabot.](../Lavabot/blob/master/webpage.md)
+  [Click here for more information about Lavabot.](olinrobotics/Lavabot/blob/master/webpage.md)
   
 ### Edwin Coworker Robot
   Edwin is a robotic arm which we are turning into a friendly robot which can intuitively interact with people. Edwin communicates mainly through gesture and body posture- the universal language.
