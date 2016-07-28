@@ -5,7 +5,6 @@ filename: net_ids
 ---
 
 # Net IDs
-###### *Last edited on 7/27/16.*
 
 ## What is a Telemetry Net ID?
 
@@ -45,3 +44,5 @@ These net IDs are taken:
 [Click here for more detailed instructions from Ardupilot](http://ardupilot.org/copter/docs/common-configuring-a-telemetry-radio-using-mission-planner.html)
 
 *This Github page is currently under construction.*
+
+*Last edited on 7/27/16.*
