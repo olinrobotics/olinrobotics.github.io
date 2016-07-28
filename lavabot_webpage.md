@@ -25,6 +25,8 @@ April Tags are a system of visual fiducial tags used to encode information in sm
 
 Our eventual goal is to use strategically placed April Tags to help our robots to navigate within their environment and with respect to each other. This will make more advanced maneuvers, such as landing our quadcopter on top of our ground vehicle, possible.
 
+![Detection](../images/2016.7.28_ImageRecognition_Tracking.JPG)
+
 [See our fiducial detection system in action](https://drive.google.com/file/d/0B6cEozG9ml5MRDA3VThmT3BteWM/view?usp=sharing)
 
 *This Github page is currently under construction. Last edited on 7/28/16.*
