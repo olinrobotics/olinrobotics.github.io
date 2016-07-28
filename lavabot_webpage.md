@@ -12,9 +12,9 @@ filename: lavabot_webpage
 
 ![Nana](../images/2016.7.14_Lavabot.JPG)
 
-*T-Rex Manual: [Page 1](../images/trex_docpg1.JPG) [Page 2](../images/trex_docpg2.JPG) [Page 3](../images/trex_docpg3.JPG)*
+###### *T-Rex Manual: [Page 1](../images/trex_docpg1.JPG) [Page 2](../images/trex_docpg2.JPG) [Page 3](../images/trex_docpg3.JPG)*
 
-[Watch Nana drive](https://drive.google.com/open?id=0B6cEozG9ml5MTW4tWkdSQzNXMG8)
+#### [Watch Nana drive](https://drive.google.com/open?id=0B6cEozG9ml5MTW4tWkdSQzNXMG8)
 
 
 ## April Tag Recognition
