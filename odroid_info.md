@@ -13,7 +13,7 @@ filename: odroid_info
 - [Using GPIO pins](#using-gpio-pins-on-the-odroid)
 - [PWM on odroid](#pwm-on-the-odroid)
 - [Setup Wifi Dongle](#setting-up-wifi-on-the-odroid-with-a-usb-dongle)
-- [Setup AR_POSE](#setup-ar_pose)
+- [Setup ar_pose](#setup-arpose)
 
 ## Useful Links
 - [flashing os images to sd cards](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md)
@@ -224,7 +224,7 @@ To use the PWM output module, follow the instructions below:
    ping www.google.com
    ```
 
-## Setup AR_POSE 
+## Setup ARPOSE 
 
 ### Installing AR_POSE
 1. Download ar_tools package from the repository.
@@ -236,6 +236,7 @@ To use the PWM output module, follow the instructions below:
    ```
 
 2. Run the script to fetch the ar marker data.
+
    ```bash
    roscd ar_pose/demo
    ./setup_demos
@@ -329,7 +330,7 @@ To use the PWM output module, follow the instructions below:
 
    When enough samples are gathered, the CALIBRATE button will turn green. Press on it to view the results.
 
-   When you're satisfied, click SAVE and COMMIT. In the first terminal, Take note of the path where camera.yaml is saved.
+   When you're satisfied, click SAVE and COMMIT. In the first terminal, take note of the path where camera.yaml is saved.
 
 5. Move the camera.yaml file to the default directory where ar_pose looks for:
 
