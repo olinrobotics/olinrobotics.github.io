@@ -10,9 +10,15 @@ The precise instructions on how to bind your receiver to your transmitter will v
 
 This is the list of transmitters that are currently in use by the Olin Intelligent Vehicles Lab:
 
+- [Spektrum DX5e Transmitter](#Spektrum_DX5e_Transmitter)
 - [Spectrum DX7 Transmitter](#Spectrum_DX7_Transmitter)
 - [Spektrum DX8 8 Channel Transmitter](#Spektrum_DX8_8_Channel_Transmitter)
 - [Spektrum DX18 Transmitter](#Spektrum_DX18_Transmitter)
+- [JR XP8103](#JR_XP8103)
+
+## [Spektrum DX5e Transmitter](http://www.spektrumrc.com/Products/Default.aspx?ProdId=SPM5500)
+
+![DX5e](../images/DX5e.png)
 
 ## [Spectrum DX7 Transmitter](http://www.bladehelis.com/Products/Support.aspx?ProdID=SPM27201)
 
@@ -45,5 +51,7 @@ Continue to hold down the binding button and watch your RC receiver. If you have
 
 ![DX18](http://www.spektrumrc.com/Content/ProductStatic/SPM18100/images/DX18(V2).png)
 
+## [JR XP8103](http://www.vvsss.com/xp8103/before.jpg)
+
 *This Github Page is currently under construction.*
-*Last edited on 7/27/16.*
+*Last edited on 7/28/16.*
