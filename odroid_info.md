@@ -322,7 +322,8 @@ To use the PWM output module, follow the instructions below:
    ```
 
    It should look like:
-   ```
+
+   ```bash
    #add_executable(ar_multi
    #	src/ar_multi.cpp
    #	src/object.cpp
