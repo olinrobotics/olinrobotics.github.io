@@ -202,7 +202,7 @@ To use the PWM output module, follow the instructions below:
 8. Restart wlan0.
 
    ```bash
-   sudo ifconfig wlan0 down && sudo ifconfig wlan0 up
+   sudo ifdown wlan0 && sudo ifup wlan0
    ```
 
 9. Check network connection status.
