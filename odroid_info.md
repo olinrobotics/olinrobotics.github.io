@@ -227,44 +227,127 @@ To use the PWM output module, follow the instructions below:
 ## Setup ARPOSE 
 
 ### Installing AR_POSE
-1. Download ar_tools package from the repository.
+1. If you plan on visualizing the output of ar_pose with rviz, you must fix libpcre:
+
+   ```bash
+   export lib_src="http://ports.ubuntu.com/pool/main/p/pcre3"
+   mkdir -p ~/libpcre && cd ~/libpcre
+   wget ${lib_src}/libpcre3-dev_8.35-7.1ubuntu1_armhf.deb
+   wget ${lib_src}/libpcre3_8.35-7.1ubuntu1_armhf.deb
+   wget ${lib_src}/libpcre16-3_8.35-7.1ubuntu1_armhf.deb
+   wget ${lib_src}/libpcre32-3_8.35-7.1ubuntu1_armhf.deb
+   wget ${lib_src}/libpcrecpp0v5_8.35-7.1ubuntu1_armhf.deb
+   unset lib_src
+   sudo dpkg -i *.deb
+   sudo apt-get -f install
+   ```
+
+   I didn't quite test if the installation would work without error.
+   If you encounter an error, run:
+
+   ```bash
+   dpkg -l | grep pcre | awk '{print $3}'
+   ```
+
+   and check that all of them start with 2.
+   otherwise, remove all the packages with
+
+   ```bash
+   dpkg -l | grep pcre | awk '{print $2}' | xargs -i sudo dpkg -r {}
+   ```
+
+   and try to install again.
+
+   If dependency problems prevent the removal of the above libraries, try running the following instead:
+
+   ```bash
+   sudo apt-get remove --purge libpcre*
+   ```
+
+   Take note of the libraries that are removed and reinstall them after you fix the package.
+
+2. Before anything else, run:
+
+   ```bash
+   sudo apt-get update
+   sudo apt-get install freeglut3-dev
+   ```
+
+   I currently don't remember where glut library was needed, so just get it at the beginning.
+
+3. You should have installed ros and initialized your catkin workspace. Make sure you have the following:
+
+   ```bash
+   source ~/catkin_ws/devel/setup.bash
+   ```
+
+   in your ~/.bashrc, so that ROS knows where your workspace is.
+
+   If your catkin workspace is not in your home directory, replace the path above, and any related paths hereafter, with wherever you have created your catkin workspace.
+
+4. Download ar_tools package from the repository.
 
    ```bash
    rosmake rviz rosbag
-   cd ~/catkin_ws/
+   cd ~/catkin_ws/src
    git clone https://github.com/ar-tools/ar_tools.git
    ```
 
-2. Run the script to fetch the ar marker data.
+5. Run the script to fetch the ar marker data.
 
    ```bash
    roscd ar_pose/demo
    ./setup_demos
    ```
 
-3. Install Camera Drivers.
+6. Install Camera Drivers.
 
    ```bash
    sudo apt-get install ros-indigo-libuvc*
    sudo apt-get install ros-indigo-uvc-camera
    ```
 
-4. Build artoolkit first, to prevent errors.
+7. Build artoolkit first, to prevent errors.
 
    ```bash
+   cd ~/catkin_ws
    catkin_make --only-pkg-with-deps artoolkit
    ```
 
-5. In order to avoid inexplicable crashes, comment out everything related to ar_multi.
+8. In order to avoid inexplicable crashes, comment out everything related to ar_multi.
 
    ```bash
    roscd ar_pose
    vim CMakeLists.txt
    ```
 
-6. Make the package with flags to remove the whitelist for artoolkit.
+   It should look like:
+   ```
+   #add_executable(ar_multi
+   #	src/ar_multi.cpp
+   #	src/object.cpp
+   #)
+   #target_link_libraries(ar_multi
+   #	${catkin_LIBRARIES}
+   #)
+   #add_dependencies(ar_multi
+   #	${PROJECT_NAME}_generate_messages_cpp
+   #	${artoolkit_EXPORTED_TARGETS}
+   #)
+   
+   install(TARGETS ar_single
+     RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+   )
+   
+   #install(TARGETS ar_multi
+   #  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+   #)
+   ```
+
+9. Make the package with flags to remove the whitelist for artoolkit.
 
    ```bash
+   cd ~/catkin_ws
    catkin_make -DCATKIN_WHITELIST_PACKAGES=""
    ```
 
@@ -310,17 +393,25 @@ To use the PWM output module, follow the instructions below:
    sudo apt-get install ros-indigo-camera-calibration
    ```
 
-3. Begin publishing the data from the camera to ROS in a terminal.
+3. Start roscore, and leave it running throughout this instruction.
+
+   ```bash
+   roscore
+   ```
+
+4. Begin publishing the data from the camera to ROS in a terminal.
 
    ```bash
    rosrun uvc_camera uvc_camera_node _device:="/dev/video0" 
    ```
 
-4. Open another tab in your terminal (CTRL-SHIFT-T) and begin Calibrating.
+5. Open another tab in your terminal (CTRL-SHIFT-T) and begin Calibrating.
 
    ```bash
    rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.496 image:=/image_raw camera:=/
    ```
+
+   A small window would appear showing the camera. The window will reopen to a bigger display if you close it, but **DO NOT CLOSE THIS WINDOW**. The buttons are identified by coordinates, and the coordinates stay the same even if your window becomes larger than the original one, which makes it very difficult to find the CALIBRATE button after you gathered all your samples.
 
    When calibrating, it takes about 40 samples. It may take more, depending on the quality of each sample.
 
@@ -332,7 +423,7 @@ To use the PWM output module, follow the instructions below:
 
    When you're satisfied, click SAVE and COMMIT. In the first terminal, take note of the path where camera.yaml is saved.
 
-5. Move the camera.yaml file to the default directory where ar_pose looks for:
+6. Move the camera.yaml file to the default directory where ar_pose looks for:
 
    ```bash
    mv ~/.ros/camera_info/camera.yaml /opt/ros/indigo/share/uvc_camera/camera_calibration.yaml
@@ -364,13 +455,6 @@ To use the PWM output module, follow the instructions below:
 
    ```bash
    roslaunch ar_pose ar_pose_single.launch
-   ```
-
-4. If rviz fails, fix the libpcre library:
-
-   ```bash
-   wget http://ports.ubuntu.com/pool/main/p/pcre3/libpcre3_8.35-7.1ubuntu1_armhf.deb
-   sudo dpkg -i libpcre3_8.35-7.1ubuntu1_armhf.deb
    ```
 
 ### If ar_pose still fails 
