@@ -12,7 +12,7 @@ filename: index
 - [Autonomous Ground Vehicle Research](#gator_ground_vehicle_research)
 - [LavaBot - Autonomous Volcanic Ground and Air Mission](#lavabot)
 - [Coworker Robot Research - Edwin](#edwin_coworker_robot)
-- [RFID-Enabled Fish Tagging](https://github.com/BluetoothFishTagging)
+- [RFID-Enabled Fish Tagging](https://bluetoothfishtagging.github.io)
 - [Cross Project Info Page](info_dump)
 
 ### Autonomous Multirotor Research
