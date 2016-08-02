@@ -1,4 +1,4 @@
-# Created by https://www.gitignore.io/api/linux,vim,git,c,c++,python
+# Created by https://www.gitignore.io/api/linux,vim,c,c++,python,jekyll
 
 ### Linux ###
 *~
@@ -24,10 +24,6 @@ Session.vim
 *~
 # auto-generated tag files
 tags
-
-
-### Git ###
-*.orig
 
 
 ### C ###
@@ -194,3 +190,9 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+
+### Jekyll ###
+_site/
+.sass-cache/
+.jekyll-metadata
