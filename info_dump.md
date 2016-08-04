@@ -27,4 +27,9 @@ The Pixhawk, which is produced by 3DR, is the main flight controller currently i
 
 [Click here for information on important parameters within Mission Planner](important_params)
 
+## Flamewheel 450/550 Leg CAD
+[Click here to see the CAD Model in Onshape](https://cad.onshape.com/documents/0b143637ae8ff380afb1463d/w/cd78b157d9237b7e200847d2/e/3c4aa47134e51d3430e6769a)
+
+This part was printed in Nylon on a Markforged Mark 2 3D Printer, for robustness and flexibility. Talk to Lauren Gulland for more info, to see it on [eiger](https://www.eiger.io), or if you need it printed and have questions!
+
 *This Git page is currently under construction.*
