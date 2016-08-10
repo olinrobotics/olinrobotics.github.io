@@ -33,3 +33,13 @@ The Pixhawk, which is produced by 3DR, is the main flight controller currently i
 This part was printed in Nylon on a Markforged Mark 2 3D Printer, for robustness and flexibility. Talk to Lauren Gulland for more info, to see it on [eiger](https://www.eiger.io), or if you need it printed and have questions!
 
 *This Git page is currently under construction.*
+
+## Waterproof drone mount and arm connectors
+The mount was printed in Onyx on a Markforged Mark 2 3D Printer for strength.
+picture
+stl
+cad
+The arm connectors are printed in PLA on a MakerBot Replicator 2 so they break in a crash.
+picture
+stl
+cad
