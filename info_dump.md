@@ -37,5 +37,5 @@ This part was printed in Nylon on a Markforged Mark 2 3D Printer, for robustness
 ## Waterproof drone mount and arm connectors
 The mount was printed in Onyx on a Markforged Mark 2 3D Printer for strength.  
 The arm connectors are printed in PLA on a MakerBot Replicator 2 so they break in a crash.  
-[Click here for the full documentation](Waterproof Drones)
+[Click here for the full documentation](https://github.com/olinrobotics/Waterproof-Multirotors)
 ![Image](../images/image.jpg?raw=true)
