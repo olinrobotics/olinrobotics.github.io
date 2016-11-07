@@ -27,6 +27,11 @@ The Pixhawk, which is produced by 3DR, is the main flight controller currently i
 
 [Click here for information on important parameters within Mission Planner](important_params)
 
+## Controller Settings and Troubleshooting
+The Olin Robotics Lab mostly uses Spektrum DX8 controllers. These controllers are useful because each controller can be bound to multiple transceivers on multiple vehicles.
+
+[Click here for information on choosing the vehicle to be controlled.](change_vehicle)
+
 ## Flamewheel 450/550 Leg CAD
 [Click here to see the CAD Model in Onshape](https://cad.onshape.com/documents/0b143637ae8ff380afb1463d/w/cd78b157d9237b7e200847d2/e/3c4aa47134e51d3430e6769a)
 
