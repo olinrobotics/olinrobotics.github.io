@@ -29,7 +29,9 @@ filename: index
   [Click here for more information about Lavabot.](Lavabot)
   
 ### Edwin Coworker Robot
-  Edwin is a robotic arm which we are turning into a friendly robot which can intuitively interact with people. Edwin communicates mainly through gesture and body posture- the universal language.
+  Edwin is an SR-17 robotic arm that we retrofitted into a friendly robot that could intuitively interact with people. Current work on Edwin includes handwritten communication, object recognition and tracking, vocal commands, and more.
+  
+  [Click here for more information about Edwin.](edwin)
   
 ### RFID-Enabled Fish Tagging
   In order to assist marine biologists in tracking highly migratory species of fish such as Tuna and Billfish, the IV Lab, in partnership with the Large Pelagics Lab, has been developing an alternative tagging platform denoted "HI-Tags," which encompass modern technology such as RFID, bluetooth, and mobile application to integrate a seamless tagging procedure within the fishing experience.
