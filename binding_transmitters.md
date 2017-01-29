@@ -10,11 +10,11 @@ The precise instructions on how to bind your receiver to your transmitter will v
 
 This is the list of transmitters that are currently in use by the Olin Intelligent Vehicles Lab:
 
-- [Spektrum DX5e Transmitter](#spektrum_dx5e_transmitter)
-- [Spectrum DX7 Transmitter](#spectrum_dx7_transmitter)
-- [Spektrum DX8 8 Channel Transmitter](#spektrum_dx8_8_channel_transmitter)
-- [Spektrum DX18 Transmitter](#spektrum_dx18_transmitter)
-- [JR XP8103](#jr_xp8103)
+- [Spektrum DX5e Transmitter](#spektrum-dx5e-transmitter)
+- [Spectrum DX7 Transmitter](#spectrum-dx7-transmitter)
+- [Spektrum DX8 8 Channel Transmitter](#spektrum-dx8-8-channel-transmitter)
+- [Spektrum DX18 Transmitter](#spektrum-dx18-transmitter)
+- [JR XP8103](#jr-xp8103)
 
 ## [Spektrum DX5e Transmitter](http://www.spektrumrc.com/Products/Default.aspx?ProdId=SPM5500)
 
@@ -43,7 +43,7 @@ In Mission Planner, click on Initial Setup, Mandatory Hardware, then on RC Calib
 
 [*Click here for a larger image.*](https://raw.githubusercontent.com/olinrobotics/olinrobotics.github.io/master/images/binding.png)
 
-Now, hold down the binding button (located on the top left side of your controller), and turn on the power. Your transmitter should now read "Binding, Model Name."
+Now, hold down the [binding button](https://drive.google.com/open?id=0B6cEozG9ml5MMXZvYUljZWVUYkE) (located on the top left side of your controller), and turn on the power. Your transmitter should now read "Binding, Model Name."
 
 Continue to hold down the binding button and watch your RC receiver. If you have a DSMX, its LED should blink orange, then settle into a steady orange glow. When you have successfully finished binding your receiver, your controller will return to its [usual screen](https://raw.githubusercontent.com/olinrobotics/olinrobotics.github.io/master/images/Spektrum.png) from the binding screen.
 
@@ -51,7 +51,26 @@ Continue to hold down the binding button and watch your RC receiver. If you have
 
 ![DX18](http://www.spektrumrc.com/Content/ProductStatic/SPM18100/images/DX18(V2).png)
 
+While holding down the [click wheel](../images/click_wheel.png) on the transmitter, turn on the power switch.
+
+This will take you to the [main menu](https://raw.githubusercontent.com/olinrobotics/olinrobotics.github.io/master/images/Spektrum.png).
+
+Use the click wheel to navigate to an unused vehicle slot (usually designated by "Acro"), then press the click wheel until you feel a click. This will select your highlighted vehicle as your current vehicle. Press the back button (located to the left of the screen) on the controller to double check that you have the correct vehicle.
+
+Turn the controller off.
+Turn on your vehicle and connect to it via Mission Planner.
+
+In Mission Planner, click on Initial Setup, Mandatory Hardware, then on RC Calibration. Under "Spektrum Bind," click on the binding button that matches your current [RC receiver](https://raw.githubusercontent.com/olinrobotics/olinrobotics.github.io/master/images/Receiver.jpg).
+
+![Binding](../images/binding.png)
+
+[*Click here for a larger image.*](https://raw.githubusercontent.com/olinrobotics/olinrobotics.github.io/master/images/binding.png)
+
+Now, hold down the [binding button](https://drive.google.com/open?id=0B6cEozG9ml5MMXZvYUljZWVUYkE) (located on the top left side of your controller), and turn on the power. Your transmitter should now read "Binding, Model Name."
+
+Continue to hold down the binding button and watch your RC receiver. If you have a DSMX, its LED should blink orange, then settle into a steady orange glow. When you have successfully finished binding your receiver, your controller will return to its [usual screen](https://raw.githubusercontent.com/olinrobotics/olinrobotics.github.io/master/images/Spektrum.png) from the binding screen.
+
 ## [JR XP8103](http://www.vvsss.com/xp8103/before.jpg)
 
 *This Github Page is currently under construction.*
-*Last edited on 7/28/16.*
+*Last edited on 1/29/17 by [L. Zuehsow](https://github.com/Oktober13).*
