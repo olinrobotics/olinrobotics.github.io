@@ -8,7 +8,7 @@ filename: index
 
 ## Current Projects:
 
-- [Autonomous Ground Vehicle Research](#gator_ground_vehicle_research)
+- [Autonomous Ground Vehicle Research](#gator ground vehicle research)
 - [Autonomous Multirotor Research](#autonomous_multirotor_research)
 - [ORCAS - Olin Robotic Collaborative Autonomous Submersibles](#autonomous_underwater_vehicle_research)
 - [LavaBot - Autonomous Volcanic Ground and Air Mission](#lavabot)
