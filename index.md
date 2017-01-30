@@ -10,7 +10,7 @@ filename: index
 
 - [Autonomous Ground Vehicle Research](#gator_ground_vehicle_research)
 - [Autonomous Multirotor Research](#autonomous_multirotor_research)
-- [Autonomous Underwater Vehicle Research](#autonomous_underwater_vehicle_research)
+- [ORCAS - Olin Robotic Collaborative Autonomous Submersibles](#autonomous_underwater_vehicle_research)
 - [LavaBot - Autonomous Volcanic Ground and Air Mission](#lavabot)
 - [Coworker Robot Research - Edwin](#edwin_coworker_robot)
 - [RFID-Enabled Fish Tagging](#rfid_enabled_fish_tagging)
@@ -21,7 +21,7 @@ filename: index
 
   [Here is more about these projects](Multirotors)
 
-### Autonomous Underwater Vehicle Research
+### ORCAS - Autonomous Underwater Vehicle Research
   <p>The lab is working on building a fleet of autonomous underwater platforms
   capable of autonomous navigation and operation. The vehicles are planned to
   use Pixhawk flight controllers and ODROID single board computers so as to
@@ -29,7 +29,7 @@ filename: index
   sensors and payloads will be customizable to allow for a wide range of
   possible missions.</p>
 
-  [Click here for more information about AUV-Lab.](auv_lab)
+  [Click here for more information about ORCAS.](orcas)
 
 ### Edwin Coworker Robot
   Edwin is an SR-17 robotic arm that we retrofitted into a friendly robot that could intuitively interact with people. Current work on Edwin includes handwritten communication, object recognition and tracking, vocal commands, and more.
