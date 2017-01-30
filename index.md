@@ -8,7 +8,7 @@ filename: index
 
 ## Current Projects:
 
-- [Autonomous Ground Vehicle Research](#gator ground vehicle research)
+- [Autonomous Ground Vehicle Research](#gator_ground_vehicle_research)
 - [Autonomous Multirotor Research](#autonomous_multirotor_research)
 - [ORCAS - Olin Robotic Collaborative Autonomous Submersibles](#autonomous_underwater_vehicle_research)
 - [LavaBot - Autonomous Volcanic Ground and Air Mission](#lavabot)
@@ -32,11 +32,11 @@ filename: index
   [Click here for more information about ORCAS.](orcas)
 
 ### Edwin Coworker Robot
-  Edwin is an SR-17 robotic arm that we retrofitted into a friendly robot that could intuitively interact with people. Current work on Edwin includes handwritten communication, object recognition and tracking, vocal commands, and more.
+  Edwin is an SR-17 robotic arm that was retrofitted to create a friendly robot that could intuitively interact with people. Current work on Edwin includes handwritten communication, object recognition and tracking, vocal commands, and more.
 
   [Click here for more information about Edwin.](edwin)
 
-### Gator Ground Vehicle Research
+### Gator_Ground_Vehicle_Research
   We are working on autonomous navigation of ground vehicles, which will assist our air vehicles by extending the flight range of our autonomous systems.  These vehicles will autonomously carry an air vehicle to areas inaccessible by humans, then launch the air vehicle to collect data, recover the air vehicle, and return.
 
 ### LavaBot
