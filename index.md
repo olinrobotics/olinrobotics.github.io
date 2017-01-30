@@ -36,7 +36,7 @@ filename: index
 
   [Click here for more information about Edwin.](edwin)
 
-### Gator_Ground_Vehicle_Research
+### Gator Ground Vehicle Research
   We are working on autonomous navigation of ground vehicles, which will assist our air vehicles by extending the flight range of our autonomous systems.  These vehicles will autonomously carry an air vehicle to areas inaccessible by humans, then launch the air vehicle to collect data, recover the air vehicle, and return.
 
 ### LavaBot
