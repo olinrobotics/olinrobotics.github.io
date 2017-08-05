@@ -2819,7 +2819,7 @@
 				display: block;
 				height: 100%;
 				left: 0;
-				opacity: 0.85;
+				opacity: 0.3;
 				position: absolute;
 				width: 100%;
 				z-index: 2;
@@ -3282,7 +3282,7 @@
 			animation: none;
 			background-color: transparent;
 			box-shadow: none;
-			position: absolute;
+			position: relative;
 		}
 
 			#header.alt.style1 .logo strong {
@@ -3412,7 +3412,7 @@
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		padding: 6em 0 2em 0 ;
+		padding: 6em 0 2em 0;
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -3420,11 +3420,13 @@
 		border-bottom: 0 !important;
 		cursor: default;
 		height: 60vh;
-		margin-bottom: 2em;
+		margin-bottom: 0em;
 		max-height: 40em;
 		min-height: 22em;
 		position: relative;
 		top: -1em;
+		display: block;
+		padding: 2em 0;
 	}
 
 		#banner:after {
@@ -3512,7 +3514,7 @@
 				-webkit-align-items: center;
 				-ms-align-items: center;
 				align-items: center;
-				margin: 1em 0 2em 0;
+				margin: 1em 0;
 			}
 
 				#banner > .inner .content > * {
@@ -3532,9 +3534,11 @@
 				}
 
 		#banner.major {
-			height: 75vh;
-			min-height: 30em;
-			max-height: 50em;
+			height: auto;
+			max-height: none;
+			/* min-height: 100%; */
+			top: 0;
+			padding: 0;
 		}
 
 			#banner.major.alt {
@@ -3592,9 +3596,8 @@
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 5em 0 1em 0 ;
+				padding: 5em 0 1em 0;
 				height: auto;
-				margin-bottom: -2.75em;
 				max-height: none;
 				min-height: 0;
 				top: -2.75em;
@@ -3617,6 +3620,7 @@
 					height: auto;
 					min-height: 0;
 					max-height: none;
+					display: block;
 				}
 
 		}
@@ -3632,7 +3636,7 @@
 				}
 
 				#banner.major {
-					padding: 8em 0 4em 0 ;
+					padding: 1em 0;
 				}
 
 		}
@@ -3798,7 +3802,7 @@
 		-webkit-transition: -webkit-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		-ms-transition: -ms-filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
 		transition: filter 0.35s ease, -webkit-filter 0.35s ease, opacity 0.375s ease-out;
-		padding-top: 3.25em;
+		/* padding-top: 3.25em; */
 	}
 
 		#wrapper.is-transitioning {
@@ -3824,7 +3828,7 @@
 		@media screen and (max-width: 736px) {
 
 			#wrapper {
-				padding-top: 2.75em;
+				padding-top: 1em;
 			}
 
 		}
